@@ -106,19 +106,28 @@ public class LoopGauntlet {
 				}
 				JOptionPane.showMessageDialog(null, printJ);
 				
-				//new loop 8
-				String printLM = "3. \n";
-				for(int l = 1; l<=10; l++) {
-					for(int m = 1; m<=10; m++) {
+		//new loop 10
+		String printLM = "3. \n";
+		for(int l = 0; l<=90; l+=10) {
+			for(int m = 1; m<=10; m++) {
 						
-						printLM = printLM + l+" "+m;
-					}
-					printLM = printLM +"\n";
-				}
-				JOptionPane.showMessageDialog(null, printLM);
-	
-	
-	
-	
+						
+				printLM =  m+" ";
+				System.out.print((l+m)+" ");
+			}
+			printLM = printLM +"\n";
+			System.out.println();
+		}
+				
+				
+		//new loop 11
+		for(int n = 0; n<=6; n++) {
+			for(int o = 0; o<n; o++) {
+						
+				System.out.print("*"+" ");
+						
+			}
+		System.out.println();
+		}
 	}
 }
